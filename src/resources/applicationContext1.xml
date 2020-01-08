@@ -12,22 +12,11 @@
 	<bean id="myFortune"
 		  class="com.may.HappyFortuneService">
 	</bean>
-    
- 	<bean id="myCoach1"
- 		class="com.may.BaseballCoach">
-		<constructor-arg ref="myFortune" />
- 	</bean>
 
-	<bean id="myCoach2"
-		  class="com.may.TrackCoach">
+	<bean id="myCoach22"
+		  class="com.may.TrackCoach"
+			scope="prototype">
 		<constructor-arg ref="myFortune" />
-	</bean>
-
-	<bean id="myCoach3"
-		  class="com.may.CricketCoach">
-		<property name="fortuneService" ref="myFortune" />
-		<property name="emailAddress" value="${email}" />
-		<property name="team" value="${team}" />
 	</bean>
 
     <!--
