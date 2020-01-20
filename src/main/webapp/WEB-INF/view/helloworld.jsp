@@ -1,10 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <%@ page isELIgnored="false" %>
     <title>Confirmation</title>
 </head>
 <body>
 Hello World of Spring!
 <br><br>
-Student name: ${param.studentName}
+<p>Name: ${param.studentName}</p>
+<br />
+<p>The message: ${message}</p>
 </body>
 </html>
